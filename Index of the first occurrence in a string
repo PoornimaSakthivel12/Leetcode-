@@ -1,0 +1,8 @@
+int strStr(char* haystack, char* needle) {
+    char *found=strstr(haystack,needle);
+    if(found==NULL){
+        return -1;
+    }
+    int f=strlen(haystack)-strlen(found);
+    return f;
+}
